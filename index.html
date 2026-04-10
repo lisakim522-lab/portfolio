@@ -11,18 +11,6 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!--
-    CONTENT GUIDE
-    1. 각 .media-placeholder는 아래 둘 중 하나로 바꾸면 됩니다.
-       <img class="media-asset" src="assets/your-file.jpg" alt="작품 설명" />
-       <video class="media-asset" src="assets/your-file.mp4" poster="assets/poster.jpg" controls preload="metadata"></video>
-       <div class="video-embed"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" allowfullscreen></iframe></div>
-    2. 작품을 새로 넣을 때는 .preview-card 하나를 복제하고, 비어 있는 슬롯 카드를 실제 작품 카드로 교체합니다.
-    3. 대표 작품 상세 섹션은 작품당 하나씩 만들고, id를 부여한 뒤 history.html에서 그 앵커로 연결합니다.
-    4. 공연 스틸은 .still-frame 하나씩 복제해서 추가합니다.
-    5. 기사 링크는 실제 URL을 받으면 example.com 주소만 교체하면 됩니다.
-  -->
-
   <div class="page-atmosphere" aria-hidden="true">
     <div class="page-atmosphere__halo page-atmosphere__halo--left"></div>
     <div class="page-atmosphere__halo page-atmosphere__halo--right"></div>
@@ -46,43 +34,61 @@
       </header>
 
       <section class="hero" id="featured" aria-labelledby="hero-title">
-        <div class="hero__media media-stage media-stage--featured">
-          <!-- HERO MEDIA SLOT -->
-          <div class="video-embed">
-            <iframe
-              src="https://www.youtube.com/embed/uL1HTWIX-zs?si=ua6RjAPnV2ahGlyJ"
-              title="위대한 청춘 홍보영상"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="media-stage__scrim"></div>
-
-          <div class="hero__overlay">
+        <div class="hero__lead">
+          <div class="hero__copy">
             <p class="eyebrow">영상스토리 가곡콘서트</p>
-            <h1 id="hero-title">위대한 청춘</h1>
+            <h1 id="hero-title" class="hero__headline">위대한 청춘</h1>
             <p class="hero__meta">2022-2023 / 세대의 기억과 가족애 / 한국 근현대사</p>
+            <p class="hero__summary">
+              산업화와 민주화의 시간을 지나온 세대의 삶을 영상과 노래로 다시 바라보게 하는
+              공연입니다. 지난 세대의 기억을 되새기고, 가족이 함께 한국 근현대사의 시간을
+              감각적으로 만날 수 있도록 구성한 영상스토리 콘서트입니다.
+            </p>
+            <div class="hero__actions">
+              <a class="button-link button-link--ghost" href="#project-great-youth">작품 상세 보기</a>
+              <a
+                class="button-link button-link--ghost"
+                href="https://youtu.be/uL1HTWIX-zs?si=ua6RjAPnV2ahGlyJ"
+                target="_blank"
+                rel="noreferrer"
+              >홍보영상 보기</a>
+              <a class="button-link" href="history.html#great-youth-history">공연 연혁 보기</a>
+            </div>
           </div>
+
+          <aside class="hero__spotlight" aria-label="프로젝트 개요">
+            <p class="eyebrow">Overview</p>
+            <dl class="hero-facts">
+              <div>
+                <dt>형식</dt>
+                <dd>영상스토리 가곡콘서트</dd>
+              </div>
+              <div>
+                <dt>기간</dt>
+                <dd>2022-2023</dd>
+              </div>
+              <div>
+                <dt>주요 무대</dt>
+                <dd>예술의전당 IBK챔버홀, 푸르지오아트홀, 안성맞춤아트홀</dd>
+              </div>
+            </dl>
+          </aside>
         </div>
 
-        <div class="hero__intro">
-          <p class="hero__summary">
-            산업화와 민주화의 시간을 지나온 50~80세대의 삶을 영상과 노래로 다시
-            호명하고, 자녀 세대가 부모와 조부모의 시간을 함께 바라보게 만드는
-            영상스토리 콘서트입니다. 흑백시대의 기억에서 컬러시대의 현재까지,
-            한국 근현대사의 희로애락을 무대 위에 겹쳐 보여줍니다.
-          </p>
-          <div class="hero__actions">
-            <a class="button-link button-link--ghost" href="#project-great-youth">작품 상세 보기</a>
-            <a
-              class="button-link button-link--ghost"
-              href="https://youtu.be/uL1HTWIX-zs?si=ua6RjAPnV2ahGlyJ"
-              target="_blank"
-              rel="noreferrer"
-            >홍보영상 보기</a>
-            <a class="button-link" href="history.html#great-youth-history">공연 연혁 보기</a>
+        <div class="hero__stage">
+          <div class="hero__media media-stage media-stage--featured">
+            <div class="video-embed">
+              <iframe
+                src="https://www.youtube.com/embed/uL1HTWIX-zs?si=ua6RjAPnV2ahGlyJ"
+                title="위대한 청춘 홍보영상"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="media-stage__scrim"></div>
+            <p class="hero__caption">Official Promo Film</p>
           </div>
         </div>
       </section>
@@ -90,66 +96,63 @@
       <section class="section-block" id="projects" aria-labelledby="projects-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">작품 프리뷰 스트립</p>
-            <h2 id="projects-title">등록된 작품과 다음 작품 슬롯</h2>
+            <p class="eyebrow">프로젝트 프리뷰</p>
+            <h2 id="projects-title">공연 하이라이트</h2>
           </div>
           <p>
-            첫 번째 작품으로 &lsquo;위대한 청춘&rsquo;을 넣어두었고, 나머지 두 카드는
-            다음 작품 소스를 받았을 때 그대로 교체할 수 있는 비어 있는 자리로
-            남겨두었습니다.
+            서로 다른 무대와 시간 속에서 이어진 공연 장면을 세 개의 프레임으로 정리했습니다.
           </p>
         </div>
 
         <div class="preview-grid">
-          <!-- PROJECT CARD TEMPLATE: article.preview-card 하나를 복제해서 추가 -->
           <article class="preview-card">
             <div class="preview-card__media media-swatch media-swatch--ember">
               <img
                 class="media-asset"
                 src="assets/great-youth-stage-ibk-2022.png"
-                alt="위대한 청춘 공연 프리뷰 이미지"
+                alt="위대한 청춘 예술의전당 IBK챔버홀 공연 장면"
                 loading="lazy"
               />
             </div>
             <div class="preview-card__body">
               <div class="preview-card__title-row">
-                <h3>위대한 청춘</h3>
-                <p>2022-2023</p>
+                <h3>예술의전당 IBK챔버홀</h3>
+                <p>2022</p>
               </div>
             </div>
           </article>
 
-          <article class="preview-card preview-card--empty">
+          <article class="preview-card">
             <div class="preview-card__media media-swatch media-swatch--harbor">
-              <div
-                class="media-placeholder"
-                role="img"
-                aria-label="다음 작품을 추가할 수 있는 빈 슬롯"
-              ></div>
+              <img
+                class="media-asset"
+                src="assets/great-youth-stage-prugio-2023.png"
+                alt="위대한 청춘 푸르지오아트홀 공연 장면"
+                loading="lazy"
+              />
             </div>
             <div class="preview-card__body">
               <div class="preview-card__title-row">
-                <h3>다음 작품 슬롯</h3>
-                <p>추가 예정</p>
+                <h3>푸르지오아트홀</h3>
+                <p>2023</p>
               </div>
-              <span class="preview-card__placeholder-note">새 작품 소스를 받으면 이 카드부터 교체하면 됩니다.</span>
             </div>
           </article>
 
-          <article class="preview-card preview-card--empty">
+          <article class="preview-card">
             <div class="preview-card__media media-swatch media-swatch--signal">
-              <div
-                class="media-placeholder"
-                role="img"
-                aria-label="다음 작품을 추가할 수 있는 빈 슬롯"
-              ></div>
+              <img
+                class="media-asset"
+                src="assets/great-youth-stage-anseong-2023.png"
+                alt="위대한 청춘 안성맞춤아트홀 공연 장면"
+                loading="lazy"
+              />
             </div>
             <div class="preview-card__body">
               <div class="preview-card__title-row">
-                <h3>다음 작품 슬롯</h3>
-                <p>추가 예정</p>
+                <h3>안성맞춤아트홀</h3>
+                <p>2023</p>
               </div>
-              <span class="preview-card__placeholder-note">작품명, 연도, 포스터만 바꾸면 같은 구조로 이어집니다.</span>
             </div>
           </article>
         </div>
@@ -158,18 +161,16 @@
       <section class="section-block" id="project-great-youth" aria-labelledby="detail-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">대표 작품 상세</p>
+            <p class="eyebrow">대표 작품</p>
             <h2 id="detail-title">위대한 청춘 아카이브</h2>
           </div>
           <p>
-            공연의 메시지와 형식을 먼저 읽고, 오른쪽 연혁 보드로 실제 무대의 흐름을
-            한눈에 확인할 수 있도록 구성했습니다.
+            공연의 형식과 주요 무대 흐름을 한 화면에서 확인할 수 있도록 구성했습니다.
           </p>
         </div>
 
         <div class="project-detail">
           <figure class="project-detail__frame media-stage media-stage--detail">
-            <!-- MAIN DETAIL MEDIA SLOT -->
             <img
               class="media-asset media-asset--contain"
               src="assets/great-youth-history-board.png"
@@ -181,7 +182,7 @@
           </figure>
 
           <article class="project-detail__copy">
-            <p class="eyebrow">등록된 첫 작품</p>
+            <p class="eyebrow">Featured Work</p>
             <h3 class="project-detail__title">위대한 청춘</h3>
 
             <dl class="project-facts">
@@ -194,21 +195,19 @@
                 <dd>영상스토리 가곡콘서트</dd>
               </div>
               <div>
-                <dt>핵심</dt>
-                <dd>50~80세대의 기억, 가족애, 한국 근현대사</dd>
+                <dt>주제</dt>
+                <dd>세대의 기억, 가족애, 한국 근현대사</dd>
               </div>
               <div>
-                <dt>주요 공연</dt>
+                <dt>주요 무대</dt>
                 <dd>예술의전당 IBK챔버홀, 푸르지오아트홀, 안성맞춤아트홀 외</dd>
               </div>
             </dl>
 
             <p class="project-detail__description">
-              &lsquo;위대한 청춘&rsquo;은 지난 세대가 걸어온 산업화와 민주화의 시간을
-              영상과 노래로 되돌아보며 한국인으로서의 자부심과 긍지를 회복하도록
-              돕는 데 첫 번째 목적을 둡니다. 동시에 자녀 세대가 부모와 조부모 세대의
-              고생과 역사를 함께 감상하며 가족애를 회복하고, 한국 근현대사를 감각적으로
-              다시 배우도록 이끄는 공연입니다.
+              &lsquo;위대한 청춘&rsquo;은 지난 세대가 걸어온 시간을 영상과 노래로 돌아보게 하며,
+              한국인으로서의 자부심과 긍지를 회복하도록 돕는 공연입니다. 동시에 자녀 세대가
+              부모와 조부모 세대의 삶과 역사를 함께 바라보며 가족의 기억을 다시 잇게 합니다.
             </p>
 
             <a class="button-link" href="history.html#great-youth-history">전체 공연 연혁 보기</a>
@@ -219,17 +218,15 @@
       <section class="section-block" aria-labelledby="stills-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">추가 이미지 스트립</p>
+            <p class="eyebrow">Stage Stills</p>
             <h2 id="stills-title">공연 스틸</h2>
           </div>
           <p>
-            제공된 연혁 이미지에서 공연 컷을 분리해 세 장의 스틸로 정리했습니다.
-            이후 작품도 같은 방식으로 무대 컷이나 포스터를 추가하면 됩니다.
+            서로 다른 공연장의 무대 분위기와 장면을 세 장의 스틸로 정리했습니다.
           </p>
         </div>
 
         <div class="stills-grid">
-          <!-- STILL TEMPLATE: figure.still-frame 하나씩 복제 -->
           <figure class="still-frame still-frame--arrival">
             <img
               class="media-asset"
@@ -269,13 +266,11 @@
             <h2 id="press-title">실제 공개 링크 모음</h2>
           </div>
           <p>
-            주신 실제 링크를 반영했습니다. 홍보영상과 기사 원문으로 바로 이동할 수 있게
-            정리해 두었고, 이후 새로운 보도가 생기면 같은 형식으로 항목만 추가하면 됩니다.
+            작품을 소개하는 홍보영상과 주요 기사 링크를 한곳에 정리했습니다.
           </p>
         </div>
 
         <ul class="press-list">
-          <!-- PRESS LINK TEMPLATE: li 하나씩 복제 -->
           <li>
             <a
               class="press-link"
@@ -337,7 +332,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>첫 번째 작품 &lsquo;위대한 청춘&rsquo;이 메인 포트폴리오와 연혁 페이지에 함께 등록되었습니다.</p>
+    <p>위대한 청춘 포트폴리오 아카이브</p>
   </footer>
 </body>
 </html>

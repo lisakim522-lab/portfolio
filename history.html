@@ -6,22 +6,11 @@
   <title>Yoni | 작품 연혁</title>
   <meta
     name="description"
-    content="작품을 추가할 때마다 연도별 이력을 함께 누적할 수 있도록 구성한 포트폴리오 연혁 페이지."
+    content="위대한 청춘의 공연과 공개 이력을 시간순으로 정리한 연혁 페이지."
   />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!--
-    HISTORY GUIDE
-    1. 새 작품이 생기면 index.html에 작품을 넣은 뒤, 여기서 .timeline-year 또는 .timeline-entry를 복제합니다.
-    2. 연도 블록은 최신 연도가 위로 오도록 정렬합니다.
-    3. 공연, 상영, 쇼케이스, 기사 공개 등 기록 단위마다 .timeline-entry 하나씩 추가합니다.
-    4. 썸네일은 아래 둘 중 하나로 교체하면 됩니다.
-       <img class="media-asset" src="assets/your-still.jpg" alt="작품 스틸 설명" />
-       <video class="media-asset" src="assets/your-loop.mp4" poster="assets/poster.jpg" preload="metadata" controls></video>
-    5. 내부 링크는 index.html의 작품 앵커로, 외부 링크는 기사나 행사 페이지로 연결합니다.
-  -->
-
   <div class="page-atmosphere" aria-hidden="true">
     <div class="page-atmosphere__halo page-atmosphere__halo--left"></div>
     <div class="page-atmosphere__halo page-atmosphere__halo--right"></div>
@@ -38,19 +27,17 @@
 
         <nav class="masthead__nav" aria-label="Primary">
           <a href="index.html">포트폴리오</a>
-          <a href="#workflow">업데이트 규칙</a>
           <a href="#great-youth-history">연혁</a>
         </nav>
       </header>
 
       <section class="history-hero" aria-labelledby="history-title">
         <div class="history-hero__copy">
-          <p class="eyebrow">작품 연혁 페이지</p>
-          <h1 id="history-title">작품을 하나 추가하면, 연혁도 같은 단위로 축적됩니다.</h1>
+          <p class="eyebrow">작품 연혁</p>
+          <h1 id="history-title">위대한 청춘의 공연 기록과 공개 이력</h1>
           <p class="history-hero__summary">
-            첫 번째 예시로 &lsquo;위대한 청춘&rsquo;을 실제 공연 기록과 함께 채워 넣었습니다.
-            앞으로는 메인 포트폴리오에 작품을 추가한 뒤, 이 페이지에 같은 제목의 연도별
-            엔트리만 덧붙이면 전체 아카이브가 자연스럽게 쌓입니다.
+            작품이 이어져 온 무대와 시기를 시간순으로 정리한 페이지입니다.
+            주요 공연장과 시즌 흐름을 한눈에 볼 수 있도록 구성했습니다.
           </p>
           <div class="history-hero__actions">
             <a class="button-link" href="index.html">포트폴리오로 돌아가기</a>
@@ -58,72 +45,28 @@
           </div>
         </div>
 
-        <aside class="history-hero__panel" aria-label="Archive update checklist">
-          <p class="eyebrow">등록 규칙</p>
+        <aside class="history-hero__panel" aria-label="Project overview">
+          <p class="eyebrow">Overview</p>
           <ol class="history-checklist">
-            <li>메인 포트폴리오에 작품 대표 섹션을 만든다.</li>
-            <li>같은 작품의 공연, 상영, 기사 기록을 연도별로 추가한다.</li>
-            <li>포트폴리오 앵커와 외부 기사 링크를 함께 연결한다.</li>
+            <li>형식: 영상스토리 가곡콘서트</li>
+            <li>기간: 2022-2023</li>
+            <li>주요 무대: 예술의전당 IBK챔버홀, 푸르지오아트홀, 안성맞춤아트홀</li>
           </ol>
         </aside>
-      </section>
-
-      <section class="section-block" id="workflow" aria-labelledby="workflow-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">업데이트 워크플로우</p>
-            <h2 id="workflow-title">다음 작품도 같은 흐름으로 추가하면 됩니다</h2>
-          </div>
-          <p>
-            한 작품을 등록할 때 필요한 반복 단위를 고정해 두었기 때문에, 페이지를 새로
-            디자인하지 않고도 포트폴리오와 연혁을 함께 늘릴 수 있습니다.
-          </p>
-        </div>
-
-        <div class="workflow-grid">
-          <article class="workflow-card">
-            <p class="workflow-card__step">Step 01</p>
-            <h3>메인 페이지 반영</h3>
-            <p>
-              대표 비주얼, 프리뷰 카드, 스틸컷 등 메인 페이지에서 먼저 작품의 존재감을
-              만든 뒤 상세 섹션을 연결합니다.
-            </p>
-          </article>
-
-          <article class="workflow-card">
-            <p class="workflow-card__step">Step 02</p>
-            <h3>연도별 이력 추가</h3>
-            <p>
-              해당 작품의 공연, 상영, 쇼케이스, 기사 공개 시점을 확인해 맞는 연도 블록에
-              엔트리를 하나씩 쌓습니다.
-            </p>
-          </article>
-
-          <article class="workflow-card">
-            <p class="workflow-card__step">Step 03</p>
-            <h3>링크 연결</h3>
-            <p>
-              메인 포트폴리오 앵커와 기사 링크를 함께 연결하면, 작품 소개와 기록 아카이브가
-              한 흐름으로 이어집니다.
-            </p>
-          </article>
-        </div>
       </section>
 
       <section class="section-block section-block--last" id="timeline" aria-labelledby="timeline-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">작품 타임라인</p>
+            <p class="eyebrow">Project Timeline</p>
             <h2 id="timeline-title">위대한 청춘 연혁</h2>
           </div>
           <p>
-            제공된 연혁 이미지를 기준으로 2022년부터 2023년까지 확인 가능한 공연 기록을
-            정리했습니다. 이후 다른 작품도 같은 형식으로 연도 블록과 엔트리를 복제하면 됩니다.
+            제공된 연혁 자료를 기준으로 2022년부터 2023년까지의 주요 공연 기록을 정리했습니다.
           </p>
         </div>
 
         <div class="timeline-board" id="great-youth-history">
-          <!-- YEAR BLOCK TEMPLATE: section.timeline-year 하나를 복제 -->
           <section class="timeline-year" aria-labelledby="year-2023">
             <div class="timeline-year__rail">
               <h3 id="year-2023">2023</h3>
@@ -131,13 +74,12 @@
             </div>
 
             <div class="timeline-year__entries">
-              <!-- TIMELINE ENTRY TEMPLATE: article.timeline-entry 하나를 복제 -->
               <article class="timeline-entry">
                 <div class="timeline-entry__media media-swatch media-swatch--signal">
                   <img
                     class="media-asset"
                     src="assets/great-youth-stage-anseong-2023.png"
-                    alt="위대한 청춘 경기아트센터 대극장 공연 썸네일 대체 이미지"
+                    alt="위대한 청춘 공연 썸네일"
                     loading="lazy"
                   />
                 </div>
@@ -157,12 +99,12 @@
                     </div>
                     <div>
                       <dt>기록</dt>
-                      <dd>2023년 시즌의 마지막 공연 이력</dd>
+                      <dd>2023년 시즌의 마지막 공연</dd>
                     </div>
                   </dl>
 
                   <p class="timeline-entry__description">
-                    제공된 연혁 자료 기준으로 확인되는 가장 최근 무대 기록입니다.
+                    2023년 하반기 공연 흐름의 마지막 기록으로 정리된 무대입니다.
                   </p>
 
                   <div class="timeline-entry__links">
@@ -177,7 +119,7 @@
                   <img
                     class="media-asset"
                     src="assets/great-youth-stage-prugio-2023.png"
-                    alt="위대한 청춘 제주해비치아트페스티벌 쇼케이스 썸네일 대체 이미지"
+                    alt="위대한 청춘 공연 썸네일"
                     loading="lazy"
                   />
                 </div>
@@ -197,12 +139,12 @@
                     </div>
                     <div>
                       <dt>기록</dt>
-                      <dd>작품 소개와 무대 흐름을 압축해 보여준 쇼케이스 일정</dd>
+                      <dd>작품 소개와 공연 흐름을 압축해 보여준 무대</dd>
                     </div>
                   </dl>
 
                   <p class="timeline-entry__description">
-                    연혁 자료에 명시된 2023년 중간 시즌 쇼케이스 기록입니다.
+                    공연의 정체성을 넓은 관객층에 소개한 2023년 중간 시즌 쇼케이스입니다.
                   </p>
 
                   <div class="timeline-entry__links">
@@ -216,7 +158,7 @@
                   <img
                     class="media-asset"
                     src="assets/great-youth-stage-ibk-2022.png"
-                    alt="위대한 청춘 안성 LS미래원 공연 썸네일 대체 이미지"
+                    alt="위대한 청춘 공연 썸네일"
                     loading="lazy"
                   />
                 </div>
@@ -241,7 +183,7 @@
                   </dl>
 
                   <p class="timeline-entry__description">
-                    지역과 장소를 확장하며 이어진 2023년 순회 흐름 중 하나입니다.
+                    작품의 무대가 지역과 공간을 넓혀가며 이어진 순회 흐름의 한 장면입니다.
                   </p>
 
                   <div class="timeline-entry__links">
@@ -255,7 +197,7 @@
                   <img
                     class="media-asset"
                     src="assets/great-youth-stage-anseong-2023.png"
-                    alt="위대한 청춘 안성맞춤아트홀 공연 썸네일"
+                    alt="위대한 청춘 안성맞춤아트홀 공연 장면"
                     loading="lazy"
                   />
                 </div>
@@ -275,12 +217,12 @@
                     </div>
                     <div>
                       <dt>기록</dt>
-                      <dd>연혁 이미지에 포함된 대표 공연 컷</dd>
+                      <dd>대표 공연 이미지로 남아 있는 주요 무대</dd>
                     </div>
                   </dl>
 
                   <p class="timeline-entry__description">
-                    현재 메인 포트폴리오의 공연 스틸로도 연결해 둔 대표 무대입니다.
+                    현재 포트폴리오 스틸 이미지로도 연결해 둔 대표 공연 장면입니다.
                   </p>
 
                   <div class="timeline-entry__links">
@@ -295,7 +237,7 @@
                   <img
                     class="media-asset"
                     src="assets/great-youth-stage-prugio-2023.png"
-                    alt="위대한 청춘 푸르지오아트홀 공연 썸네일"
+                    alt="위대한 청춘 푸르지오아트홀 공연 장면"
                     loading="lazy"
                   />
                 </div>
@@ -315,12 +257,12 @@
                     </div>
                     <div>
                       <dt>기록</dt>
-                      <dd>2023년 첫 공연 기록</dd>
+                      <dd>2023년 첫 공연 일정</dd>
                     </div>
                   </dl>
 
                   <p class="timeline-entry__description">
-                    제공된 연혁 자료에서 2023년 첫 무대로 확인되는 공연 일정입니다.
+                    2023년 시즌의 시작을 여는 첫 공연 기록입니다.
                   </p>
 
                   <div class="timeline-entry__links">
@@ -343,7 +285,7 @@
                   <img
                     class="media-asset"
                     src="assets/great-youth-stage-ibk-2022.png"
-                    alt="위대한 청춘 예술의전당 IBK챔버홀 공연 썸네일"
+                    alt="위대한 청춘 예술의전당 IBK챔버홀 공연 장면"
                     loading="lazy"
                   />
                 </div>
@@ -363,12 +305,12 @@
                     </div>
                     <div>
                       <dt>기록</dt>
-                      <dd>연혁 이미지 좌측 메인 비주얼로 사용된 대표 공연</dd>
+                      <dd>연혁 이미지의 대표 장면으로 남아 있는 주요 공연</dd>
                     </div>
                   </dl>
 
                   <p class="timeline-entry__description">
-                    현재 메인 페이지 히어로 이미지로 연결해 둔 대표 무대 기록입니다.
+                    메인 페이지의 대표 이미지와 연결된 핵심 무대 기록입니다.
                   </p>
 
                   <div class="timeline-entry__links">
@@ -383,7 +325,7 @@
                   <img
                     class="media-asset"
                     src="assets/great-youth-stage-ibk-2022.png"
-                    alt="위대한 청춘 제천의림지수변무대 공연 썸네일 대체 이미지"
+                    alt="위대한 청춘 공연 썸네일"
                     loading="lazy"
                   />
                 </div>
@@ -403,13 +345,12 @@
                     </div>
                     <div>
                       <dt>기록</dt>
-                      <dd>연혁 자료 우측 목록에 표기된 초기 공연 기록</dd>
+                      <dd>연혁 자료에 표기된 초기 공연 기록</dd>
                     </div>
                   </dl>
 
                   <p class="timeline-entry__description">
-                    2022년 시작 시기의 현장 기록으로, 이후 실내 공연 이력으로 이어지는
-                    흐름의 출발점입니다.
+                    이후 실내 공연 이력으로 이어지는 시작점으로 정리된 무대입니다.
                   </p>
 
                   <div class="timeline-entry__links">
@@ -426,7 +367,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>&lsquo;위대한 청춘&rsquo;을 첫 예시로 채운 작품 연혁 페이지입니다. 다음 작품도 같은 구조로 이어서 추가할 수 있습니다.</p>
+    <p>위대한 청춘 작품 연혁</p>
   </footer>
 </body>
 </html>
