@@ -1,6 +1,6 @@
 # 위대한 청춘
 
-https://lisakim522-lab.github.io/portfolio/
+[Portfolio](https://lisakim522-lab.github.io/portfolio/)
 
 ## 작품 연혁
 
