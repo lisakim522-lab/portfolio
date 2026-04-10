@@ -1010,21 +1010,33 @@ a:focus-visible {
 
 .timeline-entry {
   display: grid;
-  grid-template-columns: 12.5rem minmax(0, 1fr);
+  grid-template-columns: clamp(14rem, 23vw, 16rem) minmax(0, 1fr);
   gap: 1rem;
+  align-items: start;
   padding: 1rem;
 }
 
 .timeline-entry__media {
   position: relative;
-  min-height: 10.5rem;
-  aspect-ratio: 16 / 10;
+  width: 100%;
+  min-width: 0;
   overflow: hidden;
   border-radius: var(--radius-small);
+  background: #0b1524;
 }
 
 .timeline-entry__copy {
   min-width: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-entry__media .media-asset {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .timeline-entry__header {
@@ -1292,10 +1304,6 @@ a:focus-visible {
 
   .project-detail__frame {
     min-height: 22rem;
-  }
-
-  .timeline-entry__media {
-    min-height: 11.5rem;
   }
 
   .press-link {
