@@ -587,6 +587,8 @@ a:focus-visible {
   overscroll-behavior-x: contain;
   scrollbar-width: thin;
   scrollbar-color: rgba(183, 210, 237, 0.28) transparent;
+  cursor: grab;
+  touch-action: pan-y;
 }
 
 .preview-grid::-webkit-scrollbar {
@@ -613,6 +615,16 @@ a:focus-visible {
     transform 180ms ease,
     border-color 180ms ease,
     background 180ms ease;
+}
+
+.preview-grid.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  user-select: none;
+}
+
+.preview-grid.is-dragging .preview-card {
+  pointer-events: none;
 }
 
 .preview-card:hover,
