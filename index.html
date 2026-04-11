@@ -6,7 +6,7 @@
   <title>Yoni | 위대한 청춘 포트폴리오</title>
   <meta
     name="description"
-    content="영상스토리 가곡콘서트 '위대한 청춘'을 중심으로 구성한 시네마틱 포트폴리오 페이지."
+    content="대표 사례는 깊게, 배경 경험은 빠르게 탐색할 수 있도록 '위대한 청춘'을 중심으로 구성한 시네마틱 포트폴리오 페이지."
   />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -40,9 +40,11 @@
             <h1 id="hero-title" class="hero__headline">위대한 청춘</h1>
             <p class="hero__meta">2022-2023 / 세대의 기억과 가족애 / 한국 근현대사</p>
             <p class="hero__summary">
-              산업화와 민주화의 시간을 지나온 세대의 삶을 영상과 노래로 다시 바라보게 하는
-              공연입니다. 지난 세대의 기억을 되새기고, 가족이 함께 한국 근현대사의 시간을
-              감각적으로 만날 수 있도록 구성한 영상스토리 콘서트입니다.
+              대표 사례는 깊게, 배경 경험은 빠르게 탐색할 수 있게 정리했습니다. 이
+              페이지는 &lsquo;위대한 청춘&rsquo;의 상세 케이스 스터디와 공연 연혁을 한 흐름으로
+              읽을 수 있도록 구성한 포트폴리오입니다. 산업화와 민주화의 시간을 지나온 세대의
+              삶을 영상과 노래로 다시 바라보게 하며, 가족이 함께 한국 근현대사의 시간을
+              감각적으로 만날 수 있도록 설계했습니다.
             </p>
             <div class="hero__actions">
               <a class="button-link button-link--ghost" href="#project-great-youth">작품 상세 보기</a>
@@ -98,6 +100,7 @@
           <div>
             <p class="eyebrow">프로젝트 프리뷰</p>
             <h2 id="projects-title">공연 하이라이트</h2>
+            <p>모바일에서는 한 카드씩, 데스크톱에서는 비교하면서 주요 무대 흐름을 볼 수 있습니다.</p>
           </div>
         </div>
 
@@ -166,16 +169,53 @@
         </div>
 
         <div class="project-detail">
-          <figure class="project-detail__frame media-stage media-stage--detail">
-            <img
-              class="media-asset media-asset--contain"
-              src="assets/great-youth-history-board.png"
-              alt="위대한 청춘 70년 공연 및 영상스토리 가곡콘서트 연혁 이미지"
-              loading="lazy"
-            />
-            <div class="media-stage__scrim"></div>
-            <figcaption class="project-detail__caption">위대한 청춘 70년 연혁 보드</figcaption>
-          </figure>
+          <section class="project-detail__frame archive-snapshot" aria-labelledby="archive-snapshot-title">
+            <div class="archive-snapshot__intro">
+              <p class="eyebrow">Archive Snapshot</p>
+              <h3 id="archive-snapshot-title" class="archive-snapshot__title">위대한 청춘 연혁 요약</h3>
+              <p class="archive-snapshot__summary">
+                대표 사례의 흐름은 깊게 읽고, 주요 공연 배경은 빠르게 훑을 수 있도록 연도별로
+                정리했습니다.
+              </p>
+            </div>
+
+            <div class="archive-snapshot__grid">
+              <section class="archive-snapshot__year" aria-labelledby="archive-year-2020">
+                <p id="archive-year-2020" class="archive-snapshot__year-label">2020</p>
+                <ul class="archive-snapshot__list">
+                  <li>우리가곡 히스토리 콘서트 / 예술의전당 리사이틀홀</li>
+                </ul>
+              </section>
+
+              <section class="archive-snapshot__year" aria-labelledby="archive-year-2021">
+                <p id="archive-year-2021" class="archive-snapshot__year-label">2021</p>
+                <ul class="archive-snapshot__list">
+                  <li>2021 대학가곡축제 / 예술의전당 IBK챔버홀</li>
+                  <li>굿모닝 가곡 / 예술의전당 콘서트홀, 광주 예술의전당</li>
+                  <li>연애의 정석 / 예술의전당 콘서트홀</li>
+                </ul>
+              </section>
+
+              <section class="archive-snapshot__year" aria-labelledby="archive-year-2022">
+                <p id="archive-year-2022" class="archive-snapshot__year-label">2022</p>
+                <ul class="archive-snapshot__list">
+                  <li>굿모닝 가곡, 연애의 정석, 2022 한국가곡 대축제 등 주요 무대 확장</li>
+                  <li>09.03 위대한 청춘 / 충북 제천의림지수변무대</li>
+                  <li>10.26 위대한 청춘 / 예술의전당 IBK챔버홀</li>
+                </ul>
+              </section>
+
+              <section class="archive-snapshot__year" aria-labelledby="archive-year-2023">
+                <p id="archive-year-2023" class="archive-snapshot__year-label">2023</p>
+                <ul class="archive-snapshot__list">
+                  <li>01.28 위대한 청춘 70년 / 푸르지오아트홀</li>
+                  <li>03.22 위대한 청춘 70년 / 안성맞춤아트홀</li>
+                  <li>05.12 안성 LS미래원 / 06.13 제주해비치아트페스티벌 쇼케이스</li>
+                  <li>07.27 경기아트센터 대극장</li>
+                </ul>
+              </section>
+            </div>
+          </section>
 
           <article class="project-detail__copy">
             <p class="eyebrow">Featured Work</p>
@@ -204,6 +244,8 @@
               &lsquo;위대한 청춘&rsquo;은 지난 세대가 걸어온 시간을 영상과 노래로 돌아보게 하며,
               한국인으로서의 자부심과 긍지를 회복하도록 돕는 공연입니다. 동시에 자녀 세대가
               부모와 조부모 세대의 삶과 역사를 함께 바라보며 가족의 기억을 다시 잇게 합니다.
+              대표 사례는 본문에서 깊게 읽고, 공연의 확장 흐름은 왼쪽 연혁 요약에서 빠르게
+              살펴볼 수 있도록 구성했습니다.
             </p>
 
             <a class="button-link" href="history.html#great-youth-history">전체 공연 연혁 보기</a>

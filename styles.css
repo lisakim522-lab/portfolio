@@ -728,6 +728,71 @@ a:focus-visible {
   margin: 0;
 }
 
+.archive-snapshot {
+  position: relative;
+  overflow: hidden;
+  padding: 1.35rem;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-large);
+  background:
+    radial-gradient(circle at 84% 14%, rgba(236, 170, 108, 0.14), transparent 18%),
+    radial-gradient(circle at 18% 82%, rgba(110, 166, 204, 0.14), transparent 22%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015)),
+    rgba(8, 15, 27, 0.62);
+  box-shadow: var(--shadow-card);
+}
+
+.archive-snapshot__intro {
+  margin-bottom: 1rem;
+}
+
+.archive-snapshot__title {
+  margin: 0 0 0.7rem;
+  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  font-size: clamp(1.7rem, 2.5vw, 2.35rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.archive-snapshot__summary {
+  margin: 0;
+  max-width: 38rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.archive-snapshot__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.archive-snapshot__year {
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-medium);
+  background: rgba(8, 15, 27, 0.44);
+  backdrop-filter: blur(12px);
+}
+
+.archive-snapshot__year-label {
+  margin: 0 0 0.7rem;
+  color: var(--text-main);
+  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  font-size: 1.7rem;
+  line-height: 0.95;
+}
+
+.archive-snapshot__list {
+  margin: 0;
+  padding-left: 1rem;
+  display: grid;
+  gap: 0.55rem;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.68;
+}
+
 .project-detail__caption {
   position: absolute;
   left: 1.25rem;
@@ -1158,6 +1223,10 @@ a:focus-visible {
   }
 
   .project-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .archive-snapshot__grid {
     grid-template-columns: 1fr;
   }
 
