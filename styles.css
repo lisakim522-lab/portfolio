@@ -731,7 +731,7 @@ a:focus-visible {
 .archive-snapshot {
   position: relative;
   overflow: hidden;
-  padding: 1.35rem;
+  padding: 1.6rem;
   border: 1px solid var(--line-soft);
   border-radius: var(--radius-large);
   background:
@@ -743,14 +743,14 @@ a:focus-visible {
 }
 
 .archive-snapshot__intro {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .archive-snapshot__title {
-  margin: 0 0 0.7rem;
+  margin: 0 0 0.8rem;
   font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   font-size: clamp(1.7rem, 2.5vw, 2.35rem);
-  line-height: 1.02;
+  line-height: 1.08;
   letter-spacing: -0.03em;
 }
 
@@ -758,7 +758,7 @@ a:focus-visible {
   margin: 0;
   max-width: 38rem;
   color: var(--text-muted);
-  line-height: 1.75;
+  line-height: 1.8;
 }
 
 .archive-snapshot__grid {
