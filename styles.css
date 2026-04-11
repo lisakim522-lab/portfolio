@@ -1322,8 +1322,20 @@ a:focus-visible {
     padding-left: 16px;
   }
 
+  .hero__copy,
+  .history-hero__copy {
+    padding: 1.15rem;
+  }
+
+  .hero__spotlight,
+  .history-hero__panel,
+  .timeline-entry,
+  .workflow-card {
+    padding: 1rem;
+  }
+
   .hero__media {
-    min-height: 21rem;
+    min-height: 16rem;
   }
 
   .preview-grid {
@@ -1340,15 +1352,62 @@ a:focus-visible {
   }
 
   .hero__headline {
-    font-size: clamp(2.25rem, 12vw, 3.8rem);
+    max-width: none;
+    font-size: clamp(2.15rem, 11vw, 3.15rem);
+    line-height: 1.02;
+    word-break: keep-all;
   }
 
   .hero__meta {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
+    line-height: 1.55;
   }
 
   .hero__summary {
-    font-size: 0.97rem;
+    font-size: 0.95rem;
+    line-height: 1.74;
+  }
+
+  .history-hero__copy h1 {
+    max-width: none;
+    font-size: clamp(2rem, 10.5vw, 3rem);
+    line-height: 1.02;
+    word-break: keep-all;
+  }
+
+  .history-hero__summary {
+    font-size: 0.95rem;
+    line-height: 1.74;
+  }
+
+  .section-heading {
+    margin-bottom: 1rem;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(1.9rem, 10vw, 2.55rem);
+    line-height: 1.04;
+    word-break: keep-all;
+  }
+
+  .project-detail__title,
+  .archive-snapshot__title {
+    font-size: clamp(1.8rem, 9vw, 2.45rem);
+    line-height: 1.06;
+    word-break: keep-all;
+  }
+
+  .archive-snapshot {
+    padding: 1.2rem;
+  }
+
+  .archive-snapshot__year {
+    padding: 0.95rem;
+  }
+
+  .archive-snapshot__list {
+    gap: 0.45rem;
+    font-size: 0.9rem;
   }
 
   .hero__caption,
@@ -1380,14 +1439,6 @@ a:focus-visible {
     padding: 1rem 1.05rem;
   }
 
-  .hero__copy,
-  .hero__spotlight,
-  .history-hero__copy,
-  .history-hero__panel,
-  .timeline-entry,
-  .workflow-card {
-    padding: 1rem;
-  }
 }
 
 @media (max-width: 560px) {
@@ -1414,12 +1465,24 @@ a:focus-visible {
 
   .button-link {
     width: 100%;
+    min-height: 3.35rem;
+    border-radius: 1.1rem;
   }
 
   .hero__actions,
   .history-hero__actions,
   .timeline-entry__links {
     flex-direction: column;
+  }
+
+  .hero__actions .button-link,
+  .history-hero__actions .button-link {
+    flex: none;
+  }
+
+  .hero__actions,
+  .history-hero__actions {
+    gap: 0.7rem;
   }
 
   .timeline-facts div {
